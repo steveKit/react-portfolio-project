@@ -21,8 +21,6 @@ const Stars = () => {
         };
     }, []);
 
-    console.log(randomSize);
-
     return (
         
             <Star
@@ -54,7 +52,7 @@ const Star = styled.div`
     background-color: #f8f9ec;
     box-shadow: inset 0 40px #f8f9ec;
     border: 1px solid #f8f9ec;
-    opacity: 30%;
+    opacity: 50%;
 `
 
 const TextContent = styled.p`
