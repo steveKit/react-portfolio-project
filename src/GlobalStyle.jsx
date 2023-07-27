@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
 		display: block;
 	}
 	body {
+		font-family: 'Space Grotesk', sans-serif;
 		line-height: 1;
 	}
 	ol, ul {
