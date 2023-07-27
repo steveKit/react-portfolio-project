@@ -21,12 +21,13 @@ const Wrapper = styled.header`
     height: 6vh;
     background: #181b1f;
     opacity: 100;
+    margin: 0 0 0 0;
 `
 
 const TextContent = styled.h1`
     font-family: 'Space Grotesk', sans-serif;
     color: #f8f9ec;
-    opacity: 70%;
+    opacity: 90%;
     margin-right: 20px;
 `
 
