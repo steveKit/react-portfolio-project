@@ -1,4 +1,3 @@
-import portfolioPhoto from '../assets/portfolioPhoto.jpg'
 import styled from "styled-components"
 
 const Homepage = () => {
@@ -25,7 +24,7 @@ const Wrapper = styled.div`
     height: 94vh;
     width: 100vw;
     background-size: cover;
-    background-image: url(${portfolioPhoto});
+    background-image: url('src/assets/portfolioPhoto.jpg');
     z-index: -2;
 `
 

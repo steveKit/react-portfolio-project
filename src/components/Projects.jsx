@@ -7,22 +7,22 @@ const Projects = () => {
             <SectionHead>Projects</SectionHead>
             <ProjectsWrapper>
                 <Project>
-                    <ScreenShot src={'../assets/hangmanScreenshot.png'}/>
+                    <ScreenShot src={'../src/assets/hangmanScreenshot.png'} alt={'hangman screenshot'} />
                     <SectionHead>Hangman</SectionHead>
                     <TextContent></TextContent>
                 </Project>
                 <Project>
-                    <ScreenShot />
+                    <ScreenShot src={'../src/assets/cookieClickerScreenshot.png'} alt={'cookie clicker screenshot'} />
                     <SectionHead>Cookie Clicker</SectionHead>
                     <TextContent></TextContent>
                 </Project>
                 <Project>
-                    <ScreenShot />
+                    <ScreenShot src={'../src/assets/nyanCatScreenshot.png'} alt={'dodging game screenshot'} />
                     <SectionHead>Dodging Game</SectionHead>
                     <TextContent></TextContent>
                 </Project>
                 <Project>
-                    <ScreenShot />
+                    <ScreenShot src={'../src/assets/typeheadScreenshot.png'} alt={'typehead screenshot'} />
                     <SectionHead>Typehead</SectionHead>
                     <TextContent></TextContent>
                 </Project>
