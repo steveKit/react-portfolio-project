@@ -33,6 +33,9 @@ const GlobalStyle = createGlobalStyle`
 		font-family: 'Space Grotesk', sans-serif;
 		line-height: 1;
 	}
+	a {
+		text-decoration: none;
+	}
 	ol, ul {
 		list-style: none;
 	}

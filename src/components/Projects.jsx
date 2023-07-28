@@ -1,30 +1,43 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
+import useRedirect from "../hooks/useRedirect"
 
 const Projects = () => {
-
+    
     return (
         <Wrapper>
             <SectionHead>Projects</SectionHead>
             <ProjectsWrapper>
                 <Project>
-                    <ScreenShot src={'../src/assets/hangmanScreenshot.png'} alt={'hangman screenshot'} />
-                    <SectionHead>Hangman</SectionHead>
-                    <TextContent></TextContent>
+                    <Link onClick={useRedirect('https://react-state-p1-ten.vercel.app')} >
+                        <ScreenShot src={'../src/assets/hangmanScreenshot.png'} alt={'hangman screenshot'} />
+                        <SectionHead>Hangman</SectionHead>
+                        <TextContent></TextContent>
+                    </Link>
                 </Project>
+
                 <Project>
-                    <ScreenShot src={'../src/assets/cookieClickerScreenshot.png'} alt={'cookie clicker screenshot'} />
-                    <SectionHead>Cookie Clicker</SectionHead>
-                    <TextContent></TextContent>
+                    <Link onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                        <ScreenShot src={'../src/assets/cookieClickerScreenshot.png'} alt={'cookie clicker screenshot'} />
+                        <SectionHead>Cookie Clicker</SectionHead>
+                        <TextContent></TextContent>
+                    </Link>
                 </Project>
+
                 <Project>
-                    <ScreenShot src={'../src/assets/nyanCatScreenshot.png'} alt={'dodging game screenshot'} />
-                    <SectionHead>Dodging Game</SectionHead>
-                    <TextContent></TextContent>
+                    <Link onClick={useRedirect('https://project-js-nyan-cat-bay.vercel.app')} >
+                        <ScreenShot src={'../src/assets/nyanCatScreenshot.png'} alt={'dodging game screenshot'} />
+                        <SectionHead>Dodging Game</SectionHead>
+                        <TextContent></TextContent>
+                    </Link>
                 </Project>
+
                 <Project>
-                    <ScreenShot src={'../src/assets/typeheadScreenshot.png'} alt={'typehead screenshot'} />
-                    <SectionHead>Typehead</SectionHead>
-                    <TextContent></TextContent>
+                    <Link onClick={useRedirect('https://react-state-p2-psi.vercel.app')} >
+                        <ScreenShot src={'../src/assets/typeheadScreenshot.png'} alt={'typehead screenshot'} />
+                        <SectionHead>Typehead</SectionHead>
+                        <TextContent></TextContent>
+                    </Link>
                 </Project>
             </ProjectsWrapper>
         </Wrapper>
