@@ -21,7 +21,7 @@ const Wrapper = styled.header`
     align-items: center;
     box-sizing: border-box;
     display: flex;
-    width: 100vw;
+    width: auto;
     max-width: 100vw;
     height: 6vh;
     background: #181b1f;
@@ -29,7 +29,7 @@ const Wrapper = styled.header`
 `
 
 const TextContent = styled.h1`
-    color: #f8f9ec;
+    color: #bec0c2;
     opacity: 90%;
     margin: 0 20px;
 `

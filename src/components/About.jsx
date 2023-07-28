@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const About = () => {
 
@@ -10,7 +10,7 @@ const About = () => {
                 </SectionHead>
                 <Line />
                 <PersonalWrapper>
-                    <TextContent> 
+                    <TextContent>
                         As a seasoned carpenter and cabinetmaker turned web developer, 
                         I bring a unique blend of craftsmanship and technical expertise to the digital world. 
                         With a keen eye for detail and a passion for problem-solving, 
@@ -25,28 +25,53 @@ const About = () => {
                         <ListItem>HTML</ListItem>
                         <ListItem>CSS</ListItem>
                     </TechList>
-                    <Photo />
                 </PersonalWrapper>
+                <PhotoWrapper>
+                        <GradientOverlay />
+                        <Photo src="./src/assets/portfolioPhotoSmall.jpg"/>
+                    </PhotoWrapper>
             </SectionWrapper>
         </Wrapper>
     )
 };
 
 const Wrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100vw;
-    /* background-color: #393D47; */
     background: linear-gradient(#181b1f, #414344);
 `
 
+
+const GradientOverlay = styled.div`
+    position: absolute;
+    width: 350px;
+    height: 455px;
+    border-radius: 5px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(254, 194, 82, 0.40),
+        rgba(254, 74, 49, 0.40)
+    );
+    z-index: 1;
+`
+
+const PhotoWrapper = styled.div`
+    position: absolute;
+    left: 35%;
+    top: 21%;
+    width: fit-content;
+    height: fit-content;
+`
+
 const PersonalWrapper = styled.div`
+    margin-left: 15%;
 `
 
 const Photo = styled.img`
-
+    width: 350px;
+    height: 455px;
+    object-fit: cover;
+    border-radius: 5px;
 `
 
 const TechList = styled.ul`
@@ -55,6 +80,8 @@ const TechList = styled.ul`
 
 const ListItem = styled.li`
     color: #a6bbb5;
+    margin-right: 16px;
+    padding: 3px;
 `
 
 const SectionHead = styled.h1`
@@ -72,15 +99,16 @@ const SectionWrapper = styled.div`
 `
 
 const TextContent = styled.p`
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #bec0c2;
     text-align: end;
     margin: 1rem;
+    padding: 2px;
 `
 
 const Line = styled.hr`
-    width: 66vw;
-    
+    border: 1px solid #9ba5a1;
+    width: 60vw;
 `
 
 export default About;

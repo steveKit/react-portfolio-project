@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	body {
 		font-family: 'Space Grotesk', sans-serif;
-		line-height: 1;
+		line-height: 1.1;
 	}
 	a {
 		text-decoration: none;
