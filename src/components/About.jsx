@@ -29,17 +29,29 @@ const About = () => {
                 <PhotoWrapper>
                         <GradientOverlay />
                         <Photo src="./src/assets/portfolioPhotoSmall.jpg"/>
-                    </PhotoWrapper>
+                </PhotoWrapper>
             </SectionWrapper>
         </Wrapper>
     )
 };
 
 const Wrapper = styled.div`
-    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 6vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 94vh;
+    height: 94vh;
+    max-width: 100vw;
     width: 100vw;
-    background: linear-gradient(#181b1f, #414344);
+    background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
+    padding-top: 25px;
+    overflow: auto;
 `
+
 
 
 const GradientOverlay = styled.div`

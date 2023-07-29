@@ -30,6 +30,13 @@ const GlobalStyle = createGlobalStyle`
 		display: block;
 	}
 	body {
+		--primary-color: #9fa4a8;
+		--secondary-color: #bec0c2;
+		--dark-secondary-color: #414344;
+		--dark-primary-color: #181b1f;
+		--accent-color: #6f8079;
+		--secondary-accent-color: #fa8e7f;
+		--tertiary-accent-color: #e6cda1;
 		font-family: 'Space Grotesk', sans-serif;
 		line-height: 1.1;
 	}
@@ -50,6 +57,9 @@ const GlobalStyle = createGlobalStyle`
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
+	}
+	h1{
+		font-family: 'Poppins', sans-serif;;
 	}
 `;
 
