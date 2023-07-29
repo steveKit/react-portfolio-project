@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import useRedirect from "../hooks/useRedirect";
 
@@ -31,8 +31,8 @@ const Projects = () => {
                             <ImageWrapper>
                                 <ScreenShot src={'../src/assets/hangmanScreenshot.png'} alt={'hangman screenshot'} />
                             </ImageWrapper>
-                            <SectionHead>Hangman</SectionHead>
-                            <TextContent>Please try your best to not hang this man</TextContent>
+                            <ProjectTitles>Hangman</ProjectTitles>
+                            <TextContent>Try your best to not hang this man</TextContent>
                         </Link>
                         <RedirectButton onClick={useRedirect('https://react-state-p1-ten.vercel.app')} >External Link</RedirectButton>
                     </Project>
@@ -42,7 +42,7 @@ const Projects = () => {
                             <ImageWrapper>
                                 <ScreenShot src={'../src/assets/cookieClickerScreenshot.png'} alt={'cookie clicker screenshot'} />
                             </ImageWrapper>
-                            <SectionHead>Cookie Clicker</SectionHead>
+                            <ProjectTitles>Cookie Clicker</ProjectTitles>
                             <TextContent>An idle cookie clicker</TextContent>
                         </Link>
                         <RedirectButton onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >External Link</RedirectButton>
@@ -53,8 +53,8 @@ const Projects = () => {
                             <ImageWrapper>
                                 <ScreenShot src={'../src/assets/nyanCatScreenshot.png'} alt={'dodging game screenshot'} />
                             </ImageWrapper>
-                            <SectionHead>Dodging Game</SectionHead>
-                            <TextContent></TextContent>
+                            <ProjectTitles>Dodging Game</ProjectTitles>
+                            <TextContent>Dodge Klingon Warbirds as a bust of TV's Lt Comm Data</TextContent>
                         </Link>
                         <RedirectButton onClick={useRedirect('https://project-js-nyan-cat-bay.vercel.app')} >External Link</RedirectButton>
                     </Project>
@@ -64,8 +64,8 @@ const Projects = () => {
                             <ImageWrapper>
                                 <ScreenShot src={'../src/assets/typeheadScreenshot.png'} alt={'typehead screenshot'} />
                             </ImageWrapper>
-                            <SectionHead>Typehead</SectionHead>
-                            <TextContent></TextContent>
+                            <ProjectTitles>Typehead</ProjectTitles>
+                            <TextContent>A typehead sample</TextContent>
                         </Link>
                         <RedirectButton onClick={useRedirect('https://react-state-p2-psi.vercel.app')}>External Link</RedirectButton>
                     </Project>
@@ -96,23 +96,23 @@ const ImageWrapper = styled.div`
     z-index: -1;
 `
 
+const SectionHead = styled.h1`
+    font-size: 4.5rem;
+    color: var(--tertiary-accent-color);
+    text-align: end;
+`
+
 const LineContainer = styled.div`
     max-width: 600px;
     width: 80%;
     margin: 5px;
 `
 
-const SectionHead = styled.h1`
-    font-size: 3rem;
-    color: var(--tertiary-accent-color);
-    text-align: end;
-`
-
 const Line = styled.hr`
     position: relative;
     left: -100%;
     border: 1px solid var(--secondary-accent-color);
-    width: 165%;
+    width: 180%;
     margin: 8px 0 5px;
 `
 
@@ -132,13 +132,21 @@ const Project = styled.div`
     background-color: var(--dark-primary-color);
 `
 
+const ProjectTitles = styled.h1`
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--tertiary-accent-color);
+    text-align: end;
+    margin: 1rem 0 5px;
+`
+
 const ScreenShot = styled.img`
     position: relative;
     width: 500px;
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
-    transition: 0.5s all ease-out;
+    transition: 0.3s all ease-out;
     z-index: 0;
 
     &:hover {

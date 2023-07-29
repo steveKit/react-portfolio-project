@@ -4,11 +4,11 @@ const About = () => {
 
     return (
         <Wrapper>
-            <SectionWrapper>
-                <SectionHead>
-                    About Me
-                </SectionHead>
+            <SectionHead>About Me</SectionHead>
+            <LineContainer>
                 <Line />
+            </LineContainer>
+            <SectionWrapper>
                 <PersonalWrapper>
                     <TextContent>
                         As a seasoned carpenter and cabinetmaker turned web developer, 
@@ -43,16 +43,24 @@ const Wrapper = styled.div`
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
     max-height: 94vh;
     height: 94vh;
     max-width: 100vw;
     width: 100vw;
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
-    padding-top: 25px;
+    padding: 0 0 10vh;
     overflow: auto;
 `
 
-
+const SectionWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 15px 25px;
+`
 
 const GradientOverlay = styled.div`
     position: absolute;
@@ -68,15 +76,14 @@ const GradientOverlay = styled.div`
 `
 
 const PhotoWrapper = styled.div`
-    position: absolute;
-    left: 35%;
-    top: 21%;
     width: fit-content;
     height: fit-content;
 `
 
 const PersonalWrapper = styled.div`
-    margin-left: 15%;
+    width: 33%;
+    min-width: 400px;
+    margin-bottom: 25px;
 `
 
 const Photo = styled.img`
@@ -97,17 +104,9 @@ const ListItem = styled.li`
 `
 
 const SectionHead = styled.h1`
-    font-size: 3rem;
-    color: #6f8079;
+    font-size: 4.5rem;
+    color: var(--tertiary-accent-color);
     text-align: end;
-`
-
-const SectionWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    left: 6vw;
-    width: 33vw;
-    padding: 15px 25px;
 `
 
 const TextContent = styled.p`
@@ -118,9 +117,19 @@ const TextContent = styled.p`
     padding: 2px;
 `
 
-const Line = styled.hr`
-    border: 1px solid #9ba5a1;
-    width: 60vw;
+const LineContainer = styled.div`
+    max-width: 600px;
+    width: 80%;
+    margin: 5px;
 `
+
+const Line = styled.hr`
+    position: relative;
+    left: -100%;
+    border: 1px solid var(--secondary-accent-color);
+    width: 182%;
+    margin: 8px 0 5px;
+`
+
 
 export default About;

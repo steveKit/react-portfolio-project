@@ -3,33 +3,25 @@ import styled, { keyframes } from "styled-components";
 
 const Homepage = () => {
     const [ showCreative, setShowCreative ] = useState(false);
-    const [ showCoding, setShowCoding ] = useState(false);
     const [ showSteve, setShowSteve ] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => {
-            setShowCreative(true);
-        }, 3000);
-
-        setTimeout(() => {
-            setShowCoding(true);
-        }, 5500);
 
         setTimeout(() => {
             setShowSteve(true);
-        }, 8000);
+        }, 1000);
+
+        setTimeout(() => {
+            setShowCreative(true);
+        }, 3000);
     }, []);
 
     return (
         
         <Wrapper>
             <TextWrapper className={'visible'} >
-                <TitleContent className={`fade-in ${showSteve ? 'visible' : 'hidden'}`} >Steve</TitleContent>
-                <K className={`"visible"  ${showCoding ? 'movedLeft' : ''} ${showCreative ? 'movedLeft' : ''} ${showSteve ? 'movedRight' : ''}`} >
-                    K
-                </K>
-                <TitleContent className={`fade-in ${showCreative ? 'visible' : 'hidden'}`} >reative</TitleContent>
-                <TitleContent className={`fade-in ${showCoding ? 'visible' : 'hidden'}`} >oding</TitleContent>
+                <TextSteve className={`fade-in ${showSteve ? 'visible' : 'hidden'}`} >STEVE <K className={"visible"} >K</K></TextSteve>
+                <TextCreative className={`fade-in ${showCreative ? 'visible' : 'hidden'}`} >Creative Coding</TextCreative>
             </TextWrapper>
         </Wrapper>
     )
@@ -37,44 +29,12 @@ const Homepage = () => {
 
 const fadeIn = keyframes`
     from {
-        position: absolute;
         opacity: 0;
     }
     to {
-        position: static;
         opacity: 1;
     }
 `
-
-const fadeOut = keyframes`
-    from {
-        position: static;
-        opacity: 1;
-    }
-    to {
-        position: absolute;
-        opacity: 0
-    }
-`
-
-const moveLeft = keyframes`
-    from {
-        left: 0;
-    }
-    to {
-        left: 5%;
-    }
-`
-
-const moveRight = keyframes`
-    from {
-        right: 0;
-    }
-    to {
-        right: 5%;
-    }
-`
-
 
 const Wrapper = styled.div`
     position: fixed;
@@ -94,9 +54,13 @@ const Wrapper = styled.div`
 
 const TextWrapper = styled.div`
     display: flex;
-    opacity: 0;
+    width: 66vw;
+    height: 60vh;
+    border-radius: 15px;
+    border: 1px solid var(--accent-color);
+    /* box-shadow: 2px 2px 20px var(--dark-secondary-color); */
+    opacity: 1;
     animation: all 4s ease-in;
-    opacity: 0;
 
     &.visible {
         animation: ${fadeIn} 4s ease-in;
@@ -104,35 +68,40 @@ const TextWrapper = styled.div`
 }
 `
 
-const K = styled.h1`
-    position: relative;
+const K = styled.span`
     font-weight: 700;
-    font-size: 24rem;
+    font-size: 18vw;
     color: var(--secondary-accent-color);
-    transition: all 1s ease;
-
-    &.movedLeft {
-        animation: ${moveLeft} 1s ease;
-    }
-
-    &.movedRight {
-        animation: ${moveRight} 1s ease;
-    }
 `
 
-const TitleContent = styled.h1`
+const TextSteve = styled.h1`
     position: absolute;
-    font-weight: 400;
-    font-size: 16rem;
-    color: var(--tertiary-accent-color);
+    left: 18%;
+    top: 16%;
+    font-weight: 500;
+    font-size: 16vw;
+    color: var(--primary-color);
     opacity: 0;
 
     &.visible {
         animation: ${fadeIn} 2.5s ease;
+        opacity: 1;
     }
+`
 
-    &.hidden {
-        animation: ${fadeOut} 1s ease;
+const TextCreative = styled.h1`
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    font-weight: 400;
+    font-size: 6vw;
+    color: #eaeff5;
+    opacity: 0;
+    z-index: 10;
+
+    &.visible {
+        animation: ${fadeIn} 2.5s ease;
+        opacity: 1;
     }
 `
 

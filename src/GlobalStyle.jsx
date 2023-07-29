@@ -29,6 +29,12 @@ const GlobalStyle = createGlobalStyle`
 	footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
+	::-webkit-scrollbar-thumb {
+		background: #6f8079;
+	}
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
 	body {
 		--primary-color: #9fa4a8;
 		--secondary-color: #bec0c2;
@@ -39,6 +45,8 @@ const GlobalStyle = createGlobalStyle`
 		--tertiary-accent-color: #e6cda1;
 		font-family: 'Space Grotesk', sans-serif;
 		line-height: 1.1;
+		scrollbar-color: #6f8079 transparent;
+		scrollbar-width: thin;
 	}
 	a {
 		text-decoration: none;

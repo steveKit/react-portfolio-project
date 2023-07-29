@@ -36,9 +36,7 @@ const Contact = () => {
 
     return (
         <Wrapper>
-            <TextWrapper>
-                <TitleContent>Let's get in touch</TitleContent>
-            </TextWrapper>
+            <SectionHead>Let's get in touch</SectionHead>
             
             <Form id="contact" onSubmit={handleSubmit} >
             <Line />
@@ -88,7 +86,7 @@ const TextWrapper = styled.div`
     flex-wrap: wrap;
 `
 
-const TitleContent = styled.h1`
+const SectionHead = styled.h1`
     font-weight: 400;
     font-size: 4.5rem;
     color: var(--tertiary-accent-color);
@@ -102,14 +100,14 @@ const TextContent = styled.p`
     font-size: 1.2rem;
     color: var(--primary-color);
     text-align: end;
-    margin: 5px 0 1rem;
+    margin: 5px 0 2rem;
 `
 
 const Line = styled.hr`
     position: relative;
     left: -100%;
     border: 1px solid var(--secondary-accent-color);
-    width: 200%;
+    width: 205%;
     margin: 0 0 5px;
 `
 
