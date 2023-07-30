@@ -50,6 +50,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	a {
 		text-decoration: none;
+		color: var(--accent-color);
 	}
 	ol, ul {
 		list-style: none;

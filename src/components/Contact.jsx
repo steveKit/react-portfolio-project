@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Contact = () => {
@@ -60,6 +61,9 @@ const Contact = () => {
                 <Button type="reset" form="contact" value="Clear" />
                 <Button type="submit" form="contact" value="Submit" />
             </Form>
+            
+                <TextContent>email me directly at: <Link>not_yet_real@email.com</Link></TextContent>
+            
         </Wrapper>
     )
 };
@@ -98,14 +102,14 @@ const TextContent = styled.p`
     font-size: 1.2rem;
     color: var(--primary-color);
     text-align: end;
-    margin: 10px 0 16px;
+    margin: 12px 0 16px;
 `
 
 const Line = styled.hr`
     position: absolute;
-    right: 30%;
+    right: 29.5%;
     border: 1px solid var(--secondary-accent-color);
-    width: 66%;
+    width: 66.5%;
     margin: 5px 0 5px;
 `
 
@@ -150,6 +154,7 @@ const MessageBody = styled.textarea`
 
 const Button = styled.input`
     font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
     font-size: 1.2rem;
     background: none;
     border: 2px solid var(--accent-color);

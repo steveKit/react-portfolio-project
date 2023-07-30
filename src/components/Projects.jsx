@@ -123,9 +123,9 @@ const LineContainer = styled.div`
 
 const Line = styled.hr`
     position: absolute;
-    right: 40%;
+    right: 39.5%;
     border: 1px solid var(--secondary-accent-color);
-    width: 56%;
+    width: 56.5%;
     margin: 5px 0 5px;
 `
 

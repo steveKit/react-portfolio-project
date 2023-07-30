@@ -85,6 +85,7 @@ const DropdownContent = styled.div`
 
 const DropdownLink = styled(Link)`
     display: block;
+    font-size: 1.3rem;
     color: var(--accent-color);
     padding: 8px 16px;
     text-decoration: none;
