@@ -7,6 +7,7 @@ import LinkPopup from "./LinkPopup";
 
 const Projects = () => {
     const [ popupUrl, setPopupUrl ] = useState(null);
+    const [ isRedirectHovered, setIsRedirectHovered ] = useState(false);
     
     const handleOpenPopup = (url) => {
         setPopupUrl(url);
@@ -34,7 +35,10 @@ const Projects = () => {
                             <ProjectTitles>Hangman</ProjectTitles>
                             <TextContent>Try your best to not hang this man</TextContent>
                         </Link>
-                        <RedirectButton onClick={useRedirect('https://react-state-p1-ten.vercel.app')} >External Link</RedirectButton>
+                        <RedirectButton 
+                            onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                                <span className="fa-solid fa-arrow-up-right-from-square fa-xl" />
+                        </RedirectButton>
                     </Project>
 
                     <Project>
@@ -45,7 +49,10 @@ const Projects = () => {
                             <ProjectTitles>Cookie Clicker</ProjectTitles>
                             <TextContent>An idle cookie clicker</TextContent>
                         </Link>
-                        <RedirectButton onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >External Link</RedirectButton>
+                        <RedirectButton
+                            onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                                <span className="fa-solid fa-arrow-up-right-from-square fa-xl" />
+                        </RedirectButton>
                     </Project>
 
                     <Project>
@@ -56,7 +63,10 @@ const Projects = () => {
                             <ProjectTitles>Dodging Game</ProjectTitles>
                             <TextContent>Dodge Klingon Warbirds as a bust of TV's Lt Comm Data</TextContent>
                         </Link>
-                        <RedirectButton onClick={useRedirect('https://project-js-nyan-cat-bay.vercel.app')} >External Link</RedirectButton>
+                        <RedirectButton
+                            onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                                <span className="fa-solid fa-arrow-up-right-from-square fa-xl" />
+                        </RedirectButton>
                     </Project>
 
                     <Project>
@@ -67,7 +77,10 @@ const Projects = () => {
                             <ProjectTitles>Typehead</ProjectTitles>
                             <TextContent>A typehead sample</TextContent>
                         </Link>
-                        <RedirectButton onClick={useRedirect('https://react-state-p2-psi.vercel.app')}>External Link</RedirectButton>
+                        <RedirectButton
+                            onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                                <span className="fa-solid fa-arrow-up-right-from-square fa-xl" />
+                        </RedirectButton>
                     </Project>
                 </ProjectsWrapper>
             </>
@@ -123,6 +136,14 @@ const ProjectsWrapper = styled.div`
     margin-top: 5%;
 `
 
+const ProjectTitles = styled.h1`
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--tertiary-accent-color);
+    text-align: end;
+    margin: 1rem 0 5px;
+`
+
 const Project = styled.div`
     display: flex;
     justify-content: flex-start;
@@ -130,14 +151,6 @@ const Project = styled.div`
     margin: 10px;
     border-radius: 5px;
     background-color: var(--dark-primary-color);
-`
-
-const ProjectTitles = styled.h1`
-    font-weight: 400;
-    font-size: 3rem;
-    color: var(--tertiary-accent-color);
-    text-align: end;
-    margin: 1rem 0 5px;
 `
 
 const ScreenShot = styled.img`
@@ -151,7 +164,7 @@ const ScreenShot = styled.img`
 
     &:hover {
         z-index: 10;
-        transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5); 
     }
 `
 
@@ -164,10 +177,16 @@ const TextContent = styled.p`
 
 const RedirectButton = styled.button`
     background: transparent;
+    width: 75px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     color: var(--accent-color);
+    transition: 0.3s all ease;
+
+    &:hover {
+        color: var(--secondary-accent-color);
+    }
 `
 
 export default Projects;
