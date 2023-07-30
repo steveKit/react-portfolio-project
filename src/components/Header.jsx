@@ -28,10 +28,10 @@ const Header = () => {
             <TextContent>Steve Kittredge</TextContent>
             {showDropdown && (
                 <DropdownContent>
-                    <DropdownLink to={"/"} >Home</DropdownLink>
-                    <DropdownLink to={"/about"}>About</DropdownLink>
-                    <DropdownLink to={"/projects"}>Projects</DropdownLink>
-                    <DropdownLink to={"/contact"}>Contact</DropdownLink>
+                    <DropdownLink to={"/"} onClick={toggleDropdown} >Home</DropdownLink>
+                    <DropdownLink to={"/about"} onClick={toggleDropdown} >About</DropdownLink>
+                    <DropdownLink to={"/projects"} onClick={toggleDropdown} >Projects</DropdownLink>
+                    <DropdownLink to={"/contact"} onClick={toggleDropdown} >Contact</DropdownLink>
                 </DropdownContent>
             )}
             

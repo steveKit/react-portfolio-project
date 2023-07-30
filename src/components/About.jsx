@@ -41,7 +41,6 @@ const Wrapper = styled.div`
     top: 6vh;
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
     min-height: 100%;
     max-height: 94vh;
@@ -49,7 +48,7 @@ const Wrapper = styled.div`
     max-width: 100vw;
     width: 100vw;
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
-    padding: 0 0 10vh;
+    padding: 5vh 0 10vh;
     overflow: auto;
 `
 
@@ -107,6 +106,7 @@ const SectionHead = styled.h1`
     font-size: 4.5rem;
     color: var(--tertiary-accent-color);
     text-align: end;
+    margin-bottom: 5px;
 `
 
 const TextContent = styled.p`
@@ -124,11 +124,11 @@ const LineContainer = styled.div`
 `
 
 const Line = styled.hr`
-    position: relative;
-    left: -100%;
+    position: absolute;
+    right: 38%;
     border: 1px solid var(--secondary-accent-color);
-    width: 182%;
-    margin: 8px 0 5px;
+    width: 58%;
+    margin: 0 0 5px;
 `
 
 

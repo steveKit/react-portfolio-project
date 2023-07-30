@@ -70,14 +70,13 @@ const Wrapper = styled.div`
     top: 6vh;
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
     max-height: 94vh;
     height: 94vh;
     max-width: 100vw;
     width: 100vw;
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
-    padding: 0 0 10vh;
+    padding: 5vh 0 30px;
     overflow: auto;
 `
 
@@ -91,7 +90,6 @@ const SectionHead = styled.h1`
     font-size: 4.5rem;
     color: var(--tertiary-accent-color);
     text-align: end;
-    margin: 1rem 0 5px;
 `
 
 const TextContent = styled.p`
@@ -100,15 +98,15 @@ const TextContent = styled.p`
     font-size: 1.2rem;
     color: var(--primary-color);
     text-align: end;
-    margin: 5px 0 2rem;
+    margin: 10px 0 16px;
 `
 
 const Line = styled.hr`
-    position: relative;
-    left: -100%;
+    position: absolute;
+    right: 30%;
     border: 1px solid var(--secondary-accent-color);
-    width: 205%;
-    margin: 0 0 5px;
+    width: 66%;
+    margin: 5px 0 5px;
 `
 
 const Form = styled.form`

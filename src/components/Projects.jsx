@@ -100,7 +100,7 @@ const Wrapper = styled.div`
     max-width: 100vw;
     width: auto;
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
-    padding: 10vh 0 10vh;
+    padding: 5vh 0 30px;
 `
 
 const ImageWrapper = styled.div`
@@ -122,11 +122,11 @@ const LineContainer = styled.div`
 `
 
 const Line = styled.hr`
-    position: relative;
-    left: -100%;
+    position: absolute;
+    right: 40%;
     border: 1px solid var(--secondary-accent-color);
-    width: 180%;
-    margin: 8px 0 5px;
+    width: 56%;
+    margin: 5px 0 5px;
 `
 
 const ProjectsWrapper = styled.div`
