@@ -14,12 +14,12 @@ function App() {
     <BrowserRouter>
       <GlobalStyle />
       <Header />
+
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-        {/* <Route path="/project/:projectId" element={<ProjectExample />} /> */}
       </Routes>
     </BrowserRouter>
   )
