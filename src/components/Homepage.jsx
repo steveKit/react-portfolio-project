@@ -88,7 +88,6 @@ const Wrapper = styled.div`
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-height: 94vh;
     height: 94vh;
     max-width: 100vw;
     width: 100vw;
@@ -147,6 +146,10 @@ const FadeInText = styled.h1`
 
     @media (max-width: 600px) {
         font: 3rem;
+
+        &.nameText {
+        font-size: 3rem;
+    }
     }
 `
 
