@@ -150,6 +150,7 @@ const Project = styled.div`
     width: fit-content;
     margin: 10px;
     border: 1px solid var(--dark-secondary-color);
+    box-shadow: 0 0 30px var(--dark-primary-color);
     border-radius: 5px;
     background-color: var(--dark-primary-color);
 `
