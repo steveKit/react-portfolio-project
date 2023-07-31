@@ -28,7 +28,7 @@ const About = () => {
                 </PersonalWrapper>
                 <PhotoWrapper>
                         <GradientOverlay />
-                        <Photo src="src/assets/portfolioPhotoSmall.jpg"/>
+                        <Photo src="../assets/portfolioPhotoSmall.jpg"/>
                 </PhotoWrapper>
             </SectionWrapper>
         </Wrapper>
@@ -99,6 +99,7 @@ const Photo = styled.img`
     height: 455px;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: 0 0 30px var(--dark-primary-color);
 `
 
 const TechList = styled.ul`
