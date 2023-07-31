@@ -75,7 +75,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-height: 94vh;
+    min-height: 94vh;
     height: 94vh;
     max-width: 100vw;
     width: 100vw;
@@ -94,6 +94,11 @@ const SectionHead = styled.h1`
     font-size: 4.5rem;
     color: var(--tertiary-accent-color);
     text-align: end;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        text-align: center;
+    }
 `
 
 const TextContent = styled.p`

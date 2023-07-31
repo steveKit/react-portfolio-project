@@ -28,7 +28,7 @@ const About = () => {
                 </PersonalWrapper>
                 <PhotoWrapper>
                         <GradientOverlay />
-                        <Photo src="../assets/portfolioPhotoSmall.jpg"/>
+                        <Photo src="../src/assets/portfolioPhotoSmall.jpg"/>
                 </PhotoWrapper>
             </SectionWrapper>
         </Wrapper>
@@ -52,7 +52,6 @@ const Wrapper = styled.div`
     overflow: auto;
 
     @media (max-width: 600px) {
-        flex-direction: column-reverse;
         padding: 0 5px;
     }
 `
@@ -65,6 +64,10 @@ const SectionWrapper = styled.div`
     max-width: 94vw;
     flex: 1;
     padding: 15px 25px;
+
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+    }
 `
 
 const GradientOverlay = styled.div`
