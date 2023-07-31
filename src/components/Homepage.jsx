@@ -93,7 +93,6 @@ const Wrapper = styled.div`
     width: 100vw;
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
     padding: 5vh 0 30px;
-    overflow: auto;
 
     @media (max-width: 600px) {
         padding: 0 5px;
