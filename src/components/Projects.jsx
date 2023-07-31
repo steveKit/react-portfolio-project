@@ -35,7 +35,7 @@ const Projects = () => {
                             <TextContent>Try your best to not hang this man</TextContent>
                         </Link>
                         <RedirectButton 
-                            onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                            onClick={useRedirect('https://react-state-p1-ten.vercel.app')} >
                                 <span className="fa-solid fa-arrow-up-right-from-square fa-xl" />
                         </RedirectButton>
                     </Project>
@@ -63,7 +63,7 @@ const Projects = () => {
                             <TextContent>Dodge Klingon Warbirds as a bust of TV's Lt Comm Data</TextContent>
                         </Link>
                         <RedirectButton
-                            onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                            onClick={useRedirect('https://project-js-nyan-cat-bay.vercel.app')} >
                                 <span className="fa-solid fa-arrow-up-right-from-square fa-xl" />
                         </RedirectButton>
                     </Project>
@@ -77,7 +77,7 @@ const Projects = () => {
                             <TextContent>A typehead sample</TextContent>
                         </Link>
                         <RedirectButton
-                            onClick={useRedirect('https://cookie-clicker-seven.vercel.app')} >
+                            onClick={useRedirect('https://react-state-p2-psi.vercel.app')} >
                                 <span className="fa-solid fa-arrow-up-right-from-square fa-xl" />
                         </RedirectButton>
                     </Project>
