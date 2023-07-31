@@ -168,6 +168,12 @@ const Button = styled.input`
     padding: 5px 15px;
     margin: 1rem 5px 0;
     border-radius: 5px;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: var(--secondary-accent-color);
+        
+    }
 `
 
 export default Contact;

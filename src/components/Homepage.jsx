@@ -195,11 +195,17 @@ const LinkSpan = styled.button`
     padding: 5px 15px;
     margin: 1rem 5px 0;
     border-radius: 5px;
+    transition: 0.3s ease;
     opacity: 0;
 
     &.visible {
         animation: ${fadeIn} 3s ease;
         opacity: 1;
+    }
+
+    &:hover {
+        color: var(--secondary-accent-color);
+        
     }
 
     @media (max-width: 600px) {
