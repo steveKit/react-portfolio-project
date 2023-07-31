@@ -40,14 +40,14 @@ const Homepage = () => {
                 <FadeInText className={`hiText ${showHi ? "visible" : "hidden"}`}>
                     Hi.
                     <FadeInSpan className={`${showMyNameIs ? "visible" : "hidden"}`}>
-                        My Name is
+                        I'm Steve
                     </FadeInSpan>
                 </FadeInText>
                 <FadeInText className={`nameText ${showName ? "visible" : "hidden"}`}>
-                    Steve Kittredge
+                    Kittredge
                 </FadeInText>
                 <FadeInText className={`buildThingsText ${showDescription ? "visible" : "hidden"}`}>
-                    I build things online
+                    Fullstack web developer
                 </FadeInText>
                 
                 <LinksWrapper>
@@ -112,7 +112,7 @@ const TextWrapper = styled.div`
 
 const FadeInText = styled.h1`
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 4rem;
     color: var(--primary-color);
     opacity: 0;
 
@@ -122,7 +122,7 @@ const FadeInText = styled.h1`
     }
 
     &.nameText {
-        font-size: 4.4vw;
+        font-size: 9rem;
     }
 
     &.hiText {
@@ -133,15 +133,15 @@ const FadeInText = styled.h1`
 
     &.buildThingsText {
         color: var(--accent-color);
-        font-size: 3.2rem;
-        margin-top: 3%;
+        font-size: 3.4rem;
+        margin-top: 2%;
     }
 `
 
 const FadeInSpan = styled.span`
     margin-left: 1rem;
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 7rem;
     color: var(--primary-color);
     opacity: 0;
 
