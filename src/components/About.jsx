@@ -50,6 +50,11 @@ const Wrapper = styled.div`
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
     padding: 5vh 0 10vh;
     overflow: auto;
+
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+        padding: 0 5px;
+    }
 `
 
 const SectionWrapper = styled.div`
