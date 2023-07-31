@@ -95,6 +95,10 @@ const Wrapper = styled.div`
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
     padding: 5vh 0 30px;
     overflow: auto;
+
+    @media (max-width: 600px) {
+        padding: 0 5px;
+    }
 `
 
 const TextWrapper = styled.div`
@@ -108,6 +112,10 @@ const TextWrapper = styled.div`
     width: 66vw;
     height: 60vh;
     opacity: 1;
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
 `
 
 const FadeInText = styled.h1`
@@ -136,6 +144,10 @@ const FadeInText = styled.h1`
         font-size: 3.4rem;
         margin-top: 2%;
     }
+
+    @media (max-width: 600px) {
+        font: 3rem;
+    }
 `
 
 const FadeInSpan = styled.span`
@@ -149,11 +161,19 @@ const FadeInSpan = styled.span`
         animation: ${fadeIn} 2s ease-in;
         opacity: 1;
     }
+
+    @media (max-width: 600px) {
+        font-size: 3rem;
+    }
 `
 
 const LinksWrapper = styled.div`
     display: flex;
     margin-top: 2rem;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
 `
 
 const LinkSpan = styled.button`
@@ -172,6 +192,10 @@ const LinkSpan = styled.button`
     &.visible {
         animation: ${fadeIn} 2s ease;
         opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
     }
 `
 
