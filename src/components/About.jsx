@@ -28,7 +28,7 @@ const About = () => {
                 </PersonalWrapper>
                 <PhotoWrapper>
                         <GradientOverlay />
-                        <Photo src="react-portfolio-project\src\assets\portfolioPhotoSmall.jpg"/>
+                        <Photo src="\assets\portfolioPhotoSmall.jpg"/>
                 </PhotoWrapper>
             </SectionWrapper>
         </Wrapper>
