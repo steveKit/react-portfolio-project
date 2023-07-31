@@ -56,14 +56,14 @@ const Homepage = () => {
                             About
                         </LinkSpan>
                     </Link>
-                    <Link to={"/contact"} >
-                        <LinkSpan className={`${showLinks ? "visible" : "hidden"}`}>
-                            Contact
-                        </LinkSpan>
-                    </Link>
                     <Link to={"/projects"} >
                         <LinkSpan className={`${showLinks ? "visible" : "hidden"}`}>
                             Projects
+                        </LinkSpan>
+                    </Link>
+                    <Link to={"/contact"} >
+                        <LinkSpan className={`${showLinks ? "visible" : "hidden"}`}>
+                            Contact
                         </LinkSpan>
                     </Link>
                 </LinksWrapper>
@@ -88,7 +88,8 @@ const Wrapper = styled.div`
     display: flex;
     flex-flow: column;
     align-items: center;
-    height: 94vh;
+    min-height: 94vh;
+    height: fit-content;
     max-width: 100vw;
     width: 100vw;
     background: linear-gradient(var(--dark-primary-color), var(--dark-secondary-color));
