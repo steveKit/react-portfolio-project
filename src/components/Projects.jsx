@@ -149,6 +149,7 @@ const Project = styled.div`
     justify-content: flex-start;
     width: fit-content;
     margin: 10px;
+    border: 1px solid var(--dark-secondary-color);
     border-radius: 5px;
     background-color: var(--dark-primary-color);
 `

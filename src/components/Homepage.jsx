@@ -205,7 +205,6 @@ const LinkSpan = styled.button`
 
     &:hover {
         color: var(--secondary-accent-color);
-        
     }
 
     @media (max-width: 600px) {
