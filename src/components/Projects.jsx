@@ -29,7 +29,7 @@ const Projects = () => {
                     <Project>
                         <Link onClick={() => handleOpenPopup('https://react-state-p1-ten.vercel.app')} >
                             <ImageWrapper>
-                                <ScreenShot src={'/assets/hangmanScreenshot.png'} alt={'hangman screenshot'} />
+                                <ScreenShot src='\assets\hangmanScreenshot.png' alt={'hangman screenshot'} />
                             </ImageWrapper>
                             <ProjectTitles>Hangman</ProjectTitles>
                             <TextContent>Try your best to not hang this man</TextContent>
@@ -43,7 +43,7 @@ const Projects = () => {
                     <Project>
                         <Link onClick={() => handleOpenPopup('https://cookie-clicker-seven.vercel.app')} >
                             <ImageWrapper>
-                                <ScreenShot src={'/assets/cookieClickerScreenshot.png'} alt={'cookie clicker screenshot'} />
+                                <ScreenShot src='\assets\cookieClickerScreenshot.png' alt={'cookie clicker screenshot'} />
                             </ImageWrapper>
                             <ProjectTitles>Cookie Clicker</ProjectTitles>
                             <TextContent>An idle cookie clicker</TextContent>
@@ -57,7 +57,7 @@ const Projects = () => {
                     <Project>
                         <Link onClick={() => handleOpenPopup('https://project-js-nyan-cat-bay.vercel.app')} >
                             <ImageWrapper>
-                                <ScreenShot src={'/assets/nyanCatScreenshot.png'} alt={'dodging game screenshot'} />
+                                <ScreenShot src='\assets\nyanCatScreenshot.png' alt={'dodging game screenshot'} />
                             </ImageWrapper>
                             <ProjectTitles>Dodging Game</ProjectTitles>
                             <TextContent>Dodge Klingon Warbirds as a bust of TV's Lt Comm Data</TextContent>
@@ -71,7 +71,7 @@ const Projects = () => {
                     <Project>
                         <Link onClick={() => handleOpenPopup('https://react-state-p2-psi.vercel.app')} >
                             <ImageWrapper>
-                                <ScreenShot src={'/assets/typeheadScreenshot.png'} alt={'typehead screenshot'} />
+                                <ScreenShot src='\assets\typeheadScreenshot.png' alt={'typehead screenshot'} />
                             </ImageWrapper>
                             <ProjectTitles>Typehead</ProjectTitles>
                             <TextContent>A typehead sample</TextContent>
