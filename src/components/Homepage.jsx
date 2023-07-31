@@ -100,7 +100,7 @@ const Wrapper = styled.div`
 const TextWrapper = styled.div`
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 60%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
@@ -174,5 +174,6 @@ const LinkSpan = styled.button`
         opacity: 1;
     }
 `
+
 
 export default Homepage;
