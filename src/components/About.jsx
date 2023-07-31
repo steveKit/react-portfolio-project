@@ -57,6 +57,7 @@ const SectionWrapper = styled.div`
     justify-content: center;
     width: fit-content;
     flex-wrap: wrap;
+    max-width: 94vw;
     flex: 1;
     padding: 15px 25px;
 `
