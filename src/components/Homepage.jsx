@@ -24,11 +24,11 @@ const Homepage = () => {
 
         setTimeout(() => {
             setShowDescription(true);
-        }, 4000);
+        }, 3000);
 
         setTimeout(() => {
             setShowLinks(true);
-        }, 5250);
+        }, 3500);
 
     }, []);
 
@@ -198,7 +198,7 @@ const LinkSpan = styled.button`
     opacity: 0;
 
     &.visible {
-        animation: ${fadeIn} 2s ease;
+        animation: ${fadeIn} 3s ease;
         opacity: 1;
     }
 
